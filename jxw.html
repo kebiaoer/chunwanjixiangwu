@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background-color: #FFEBEB; /* 淡红色背景 */
         }
         h1, h2, h3  {
             color: white;
@@ -16,7 +17,7 @@
             padding: 10px;
             border-radius: 5px;
         }
-         h4, h5, h6 {
+        h4, h5, h6 {
             color: black;
             background-color: white;
             padding: 10px;
@@ -26,6 +27,11 @@
             max-width: 100%;
             height: auto;
             margin-bottom: 10px;
+            transition: transform 0.3s, filter 0.3s; /* 添加交互效果的过渡 */
+        }
+        img:hover {
+            transform: scale(1.1); /* 鼠标悬停放大效果 */
+            filter: brightness(1.2); /* 鼠标悬停增亮效果 */
         }
         .container {
             width: 80%;
@@ -55,6 +61,10 @@
     </style>
 </head>
 <body>
+
+    <audio autoplay loop>
+        <source src="新年背景音乐.mp3" >
+    </audio>
 
     <div class="container">
         <footer>
@@ -115,6 +125,5 @@
             <p><strong><h5>春节快乐</h5></strong></p>
         </footer>
     </div>
-
 </body>
 </html>
